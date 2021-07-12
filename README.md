@@ -41,10 +41,10 @@ $ pipenv run flask run --no-debugger # debugger not needed since we are only ser
 Configure your database connection in `backend/.env`. This `.env` file should _not_ be checked in to version control. The sample file (`.env.sample`) assumes you have a local MongoDB instance running on `mongodb://localhost:271017/` and accessing the `test` database. `.env` files should be used in development only. The API server `backend/wsgi.py` will look for environment variables named the following for MongoDB connection configuration:
 
 - `MONGODB_DB` - Database name
-- `MONGODB_HOST
+- `MONGODB_HOST`
 - `MONGODB_PORT`
-- MONGODB_USERNAME
-- MONGODB_PASSWORD
+- `MONGODB_USERNAME`
+- `MONGODB_PASSWORD`
 
 Of these 5 environment variables, only the first three are required.
 
